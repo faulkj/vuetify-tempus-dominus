@@ -1,0 +1,35 @@
+{
+   "compilerOptions": {
+      "target": "es2015",
+      "module": "esnext",
+      "moduleResolution": "node",
+      "allowSyntheticDefaultImports": true,
+      "noEmitOnError": true,
+      "lib": [
+         "esnext",
+         "dom"
+      ],
+      "strict": true,
+      "esModuleInterop": true,
+      "rootDir": "./",
+      "emitDecoratorMetadata": true,
+      "emitDeclarationOnly": false,
+      "experimentalDecorators": true,
+      "baseUrl": "./",
+      "paths": {
+         "@/*": [
+            "./src/*"
+         ]
+      },
+      "typeRoots": [
+         "./node_modules/@types"
+      ]
+   },
+   "exclude": [
+      "node_modules"
+   ],
+   "include": [
+      "src/**/*.ts",
+      "src/**/*.vue"
+   ]
+}

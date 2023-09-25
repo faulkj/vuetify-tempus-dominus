@@ -1,0 +1,40 @@
+{
+   "name": "vuetify-tempus-dominus",
+   "version": "1.0.0",
+   "main": "components/VuetifyTempusDominus.vue",
+   "description": "Tempus Dominus DateTime Picker for Vuetify 3",
+   "author": "Joshua Faulkenberry <j@joshuafaulkenberry.com> (https://joshuafaulkenberry.com/)",
+   "license": "Kopimi",
+   "homepage": "https://github.com/faulkj/vuetify-tempus-dominus#readme",
+   "repository": {
+      "type": "git",
+      "url": "https://github.com/faulkj/vuetify-tempus-dominus.git"
+   },
+   "bugs": {
+      "url": "https://github.com/faulkj/vuetify-tempus-dominus/issues"
+   },
+   "keywords": [
+      "vuetify",
+      "vue",
+      "vue3",
+      "tempus-dominus",
+      "datetime",
+      "picker",
+      "datetimepicker",
+      "datepicker",
+      "timepicker",
+      "calendar",
+      "time",
+      "ui-component"
+   ],
+   "peerDependencies": {
+      "@eonasdan/tempus-dominus": "^6.7.13",
+      "material-design-icons-iconfont": "6.7.*",
+      "vue": "3.3.*",
+      "vuetify": "^3.3.17"
+   },
+   "files": [
+      "components/VuetifyTempusDominus.vue",
+      "README.md"
+   ]
+}
