@@ -6,13 +6,13 @@
 
 ## Installation
 
-```ts
+```bash
 npm install vuetify-tempus-dominus
 ```
 
 ## Usage Guide
 
-Importing the Component
+### Importing the Component
 
 ```ts
 import VuetifyTempusDominus from 'vuetify-tempus-dominus'
