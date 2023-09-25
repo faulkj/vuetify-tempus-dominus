@@ -1,11 +1,18 @@
 <template>
-   <v-text-field ref="timeSelector" v-bind="$attrs" v-on="$attrs" v-model="time" :aria-label="$attrs.label || 'Time'"
-      :aria-required="$attrs.required || false" :append-inner-icon="($attrs.appendInnerIcon as any) || 'calendar_today'"
+   <v-text-field
+      ref="timeSelector"
+      v-bind="$attrs"
+      v-on="$attrs"
+      v-model="time"
+      :aria-label="$attrs.label || 'Time'"
+      :aria-required="$attrs.required || false"
+      :append-inner-icon="($attrs.appendInnerIcon as any) || 'calendar_today'"
       @click:prepend-inner="icoClick('click:prepend-inner', $event)"
       @click:prepend-outer="icoClick('click:prepend-outer', $event)"
       @click:append-inner="icoClick('click:append-inner', $event)"
-      @click:append-outer="icoClick('click:append-outer', $event)">
-      <template v-for="(_, slotName) in typedSlots" :key="slotName" v-slot:[slotName]>
+      @click:append-outer="icoClick('click:append-outer', $event)"
+   >
+      <template v-for="(_, slotName) in $slots" :key="slotName" v-slot:[slotName]>
          <slot :name="slotName"></slot>
       </template>
    </v-text-field>
@@ -32,8 +39,6 @@ export default defineComponent({
       let picker: TempusDominus | null = null
 
       const
-         typedSlots = computed(() => slots as MyComponentSlots),
-
          time: Ref<string> = ref(''),
 
          timeSelector: Ref<null | HTMLInputElement> = ref(null),
@@ -90,13 +95,12 @@ export default defineComponent({
       return {
          time,
          timeSelector,
-         icoClick,
-         typedSlots
+         icoClick
       }
    }
 })
 </script>
 
 <style lang="scss">
-@import '@eonasdan/tempus-dominus/src/scss/tempus-dominus'
+@import '@eonasdan/tempus-dominus/src/scss/tempus-dominus';
 </style>
