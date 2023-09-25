@@ -6,7 +6,7 @@
 
 ## Installation
 
-```ts
+```bash
 npm install vuetify-tempus-dominus
 ```
 
